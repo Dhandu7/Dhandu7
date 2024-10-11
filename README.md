@@ -1,4 +1,5 @@
-👋 Hi there! I'm **Aaryan Dhand**, a Software Engineering student at the **Schulich School of Engineering, University of Calgary**, set to graduate in April 2026. My passion for solving real-world problems through technology has driven me to work on a variety of projects and roles that blend software development, game design, and robotics. 
+## 👋 Hi there! I'm **Aaryan Dhand**,
+I am Software Engineering student at the **Schulich School of Engineering, University of Calgary**, set to graduate in April 2026. My passion for solving real-world problems through technology has driven me to work on a variety of projects and roles that blend software development, game design, and robotics. 
 
 ### 🌱 What I’m Working On
 - **Unity Game Development**: Currently developing platformer game physics using **C#** at **TechStart**.
