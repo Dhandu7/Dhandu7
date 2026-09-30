@@ -14,6 +14,19 @@ I finish my BSc in Software Engineering (Schulich School of Engineering, Univers
 
 ## Featured projects
 
+### TowQuick
+
+I co-founded TowQuick, a roadside-assistance platform where independent drivers and companies share one job model. It's in active development, and I work across the backend, the dispatch service, and the product spec.
+
+- **Multi-tenancy:** a PostgreSQL schema with Row-Level Security policies. I migrated existing independent drivers into single-provider organizations with zero downtime.
+- **Access control:** I separated platform roles from company roles (owner, dispatcher, manager, driver, internal operations) to remove a cross-tenant privilege-escalation risk, and built an Express and TypeScript API for tenant-safe organization switching.
+- **Payments:** Stripe Connect driver payouts through an `account.updated` onboarding webhook, a weekly scheduled payout run, and a backfill for previously completed jobs.
+- **Dispatch:** I own the high-traffic dispatch microservice for drivers and customers, with location services and rate limiting. Offers are organization-aware, expire, support accept and decline, and handle reassignment conflicts safely.
+- **Internal tooling:** an admin and dispatcher dashboard with a live job queue and map, real-time updates, and driver-compliance review, on a typed API layer with Zod and tested with Playwright, Vitest, and accessibility tests.
+- **Planning:** a screen-level spec covering 16 Business Dashboard and 12 Admin CRM screens, and a roadmap split into 8 Jira epics with an estimate of roughly 40 to 59 engineer-weeks.
+
+`TypeScript` `Express` `PostgreSQL` `Supabase` `Stripe Connect` `React` `Next.js` `React Native` `Expo` `Zod` `Playwright` `Vitest`
+
 ### [Regulatory Filings RAG Pipeline](https://github.com/Dhandu7/regulatory-filings-rag)
 
 A bronze, silver, gold pipeline that ingests Ontario Energy Board filings and serves a question-answering API where Claude answers with numbered citations to the source filing, docket, section, and page.
@@ -23,12 +36,6 @@ A bronze, silver, gold pipeline that ingests Ontario Energy Board filings and se
 - Every index build is gated on a dbt build of 8 models and 42 tests. GitHub Actions CI and a Docker Compose stack run on every push.
 
 `Python` `PostgreSQL` `pgvector` `dbt` `FastAPI` `LangChain` `Prefect` `Docker` `Claude API`
-
-### [AcmePlex](https://github.com/Dhandu7/AcmePlex)
-
-A movie-booking platform in Java with a Spring Boot backend, built around the Model-View-Controller pattern.
-
-`Java` `Spring Boot`
 
 ### More
 
@@ -41,7 +48,7 @@ A movie-booking platform in Java with a Spring Boot backend, built around the Mo
 
 | Role | Where | When | What I did |
 | --- | --- | --- | --- |
-| Co-Founder, Product & Development | TowQuick | Jun 2026 to present | Multi-tenancy with PostgreSQL Row-Level Security and a zero-downtime driver migration, Stripe Connect payouts, and the dispatch microservice. |
+| Co-Founder, Product & Development | TowQuick | Jun 2026 to present | Backend, dispatch, payouts, and product spec for a multi-tenant roadside-assistance platform. Details above. |
 | AI & Machine Learning Engineer | Vivordo | Oct 2025 to Jul 2026 | Cut LLM inference latency by 57% in a RAG insight pipeline and built a multimodal stress model. |
 | Data Analyst Co-op | Hydro One Networks | May 2025 to May 2026 | SQL Server warehouse ingesting 10GB a day across three sources, and a six-person ETL team that made material quantification 6x faster. |
 | Software Developer | TechStart UCalgary & Tidefall Studios | Oct 2024 to Jun 2025 | Improved Unity gameplay runtime performance by 40% and built a modular item framework that made integration 90% faster. |
